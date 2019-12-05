@@ -107,6 +107,22 @@ public class User {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", email='" + email + '\'' +
+                ", gender='" + gender + '\'' +
+                ", phone='" + phone + '\'' +
+                ", question='" + question + '\'' +
+                ", result='" + result + '\'' +
+                ", issueDate=" + issueDate +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
     public User() {
     }
 }

@@ -20,4 +20,27 @@ public class Goods {
     private String remark;
     private User user;
     private Car car;
+
+    @Override
+    public String toString() {
+        return "Goods{" +
+                "id=" + id +
+                ", goodsStyle='" + goodsStyle + '\'' +
+                ", goodsName='" + goodsName + '\'' +
+                ", goodsCount=" + goodsCount +
+                ", goodsUnit='" + goodsUnit + '\'' +
+                ", startOmit='" + startOmit + '\'' +
+                ", startCity='" + startCity + '\'' +
+                ", endOmit='" + endOmit + '\'' +
+                ", endCity='" + endCity + '\'' +
+                ", style='" + style + '\'' +
+                ", transportTime=" + transportTime +
+                ", phone='" + phone + '\'' +
+                ", link='" + link + '\'' +
+                ", issueDate=" + issueDate +
+                ", remark='" + remark + '\'' +
+                ", user=" + user +
+                ", car=" + car +
+                '}';
+    }
 }

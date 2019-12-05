@@ -32,6 +32,26 @@ public class Car {
         this.id = id;
     }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "id=" + id +
+                ", tradeMark='" + tradeMark + '\'' +
+                ", brand='" + brand + '\'' +
+                ", style='" + style + '\'' +
+                ", carLoad=" + carLoad +
+                ", driverName='" + driverName + '\'' +
+                ", driverTime='" + driverTime + '\'' +
+                ", licenceNumber='" + licenceNumber + '\'' +
+                ", licenceStyle='" + licenceStyle + '\'' +
+                ", linkMan='" + linkMan + '\'' +
+                ", linkPhone='" + linkPhone + '\'' +
+                ", remark='" + remark + '\'' +
+                ", issueDate=" + issueDate +
+                ", user=" + user +
+                '}';
+    }
+
     public String getTradeMark() {
         return tradeMark;
     }

@@ -1,18 +1,27 @@
 package it.hxl.po;
 
-import java.util.Date;
-
 public class LogisticsInfo {
     private int id;
     private String title;
     private String content;
-    private Date issueDate;
+    private String issueDate;
     private Admin admin;
 
     public LogisticsInfo() {
     }
 
-    public LogisticsInfo(int id, String title, String content, Date issueDate, Admin admin) {
+    @Override
+    public String toString() {
+        return "LogisticsInfo{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", content='" + content + '\'' +
+                ", issueDate='" + issueDate + '\'' +
+                ", admin=" + admin +
+                '}';
+    }
+
+    public LogisticsInfo(int id, String title, String content, String issueDate, Admin admin) {
         this.id = id;
         this.title = title;
         this.content = content;
@@ -44,11 +53,11 @@ public class LogisticsInfo {
         this.content = content;
     }
 
-    public Date getIssueDate() {
+    public String getIssueDate() {
         return issueDate;
     }
 
-    public void setIssueDate(Date issueDate) {
+    public void setIssueDate(String issueDate) {
         this.issueDate = issueDate;
     }
 

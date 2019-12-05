@@ -6,7 +6,81 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aec15bed-de1d-4e3b-ba0b-d904bacb1135" name="Default Changelist" comment="" />
+    <list default="true" id="aec15bed-de1d-4e3b-ba0b-d904bacb1135" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/AdminDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/AdminDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/LogisticsInfoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/LogisticsInfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/jstltag/DateTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/services/AdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/services/LogisticsInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dateConvert.tld" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/sui-append.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/sui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/car_info.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/enterprise_info.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/goods_info.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/Transaction_detail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/detail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/lib.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/mountain.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/setting.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/sui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/user/car_info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/user/enterprise_info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/user/goods_info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/user/maini.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/it/hxl/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/解决 java.lang.NoClassDefFoundError comfasterxmljacksondatabindexcInvalidDefinitionException 的办法.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/controller/RegistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/controller/RegistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/mapper/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/po/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/po/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/po/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/po/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/po/EnterpriseInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/po/EnterpriseInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/po/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/po/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/po/LogisticsInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/po/LogisticsInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/po/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/car_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/car_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/enterprise_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/enterprise_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/goods_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/goods_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/userLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/userLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/user/userLogin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/userLogin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/controller/RegistController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/controller/RegistController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/po/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/po/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/po/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/po/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/po/EnterpriseInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/po/EnterpriseInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/po/Goods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/po/Goods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/po/LogisticsInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/po/LogisticsInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/po/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/controller/RegistController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/controller/RegistController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/EnterpriseInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/EnterpriseInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/Goods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/Goods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/LogisticsInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/LogisticsInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/car_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/car_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/enterprise_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/enterprise_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/goods_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/goods_info.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/userLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/userLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/static/css/user/userLogin.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/static/css/user/userLogin.css" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +90,20 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -23,12 +111,16 @@
         <option value="FxmlFile" />
         <option value="spring-beans.schema" />
         <option value="mybatis-config" />
+        <option value="Jsp File" />
+        <option value="CSS File" />
         <option value="Interface" />
         <option value="mapper" />
         <option value="Class" />
-        <option value="Jsp File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -45,10 +137,15 @@
     </option>
   </component>
   <component name="ProjectId" id="1UL7jO5RziuZ1mfChjgHHvfq3hj" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/static/images" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -56,16 +153,19 @@
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\WEB-INF\jsp" />
-      <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\static\css" />
-      <recent name="E:\Java\idea\logisticsinfo\src\main\java\it\hxl\controller" />
-      <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\static\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Java\idea\logisticsinfo\src\main\java\it\hxl\mapper" />
+      <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\static\css" />
       <recent name="E:\Java\idea\logisticsinfo\src\main\java\it\hxl\dao" />
+      <recent name="E:\Java\idea\logisticsinfo\src\main\java\it\hxl\mapper" />
+      <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\WEB-INF\jsp\user" />
       <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\WEB-INF" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\static\images" />
+      <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\static\js" />
+      <recent name="E:\Java\idea\logisticsinfo\target\logisticsinfo\static\images" />
+      <recent name="E:\Java\idea\logisticsinfo\target\logisticsinfo\static\css\user" />
+      <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\static\js\user" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -90,6 +190,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.testP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="logisticsinfo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.hxl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.hxl" />
+      <option name="MAIN_CLASS_NAME" value="it.hxl.MyTest" />
+      <option name="METHOD_NAME" value="testP" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -185,6 +301,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest.testP" />
         <item itemvalue="JUnit.Mytest.testSql" />
         <item itemvalue="Application.Mytest" />
       </list>
@@ -207,10 +324,33 @@
       <workItem from="1575126724001" duration="1433000" />
       <workItem from="1575128200174" duration="2209000" />
       <workItem from="1575191060143" duration="21162000" />
+      <workItem from="1575261035526" duration="36146000" />
+      <workItem from="1575304362032" duration="1624000" />
+      <workItem from="1575351323337" duration="6984000" />
+      <workItem from="1575363484376" duration="26130000" />
+      <workItem from="1575428354545" duration="19401000" />
+      <workItem from="1575517784771" duration="3466000" />
+      <workItem from="1575541349140" duration="1948000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

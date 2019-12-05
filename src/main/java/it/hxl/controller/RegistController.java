@@ -10,4 +10,8 @@ public class RegistController {
 	public String toRegist() {
 		return "regist";
 	}
+	@RequestMapping("/header")
+	public String toHeader(){
+		return "user/header";
+	}
 }

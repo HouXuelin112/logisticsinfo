@@ -5,12 +5,20 @@
   Time: 21:11
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" isELIgnored="false" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" isELIgnored="false"%>
 <html>
 <head>
     <title>企业信息</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/user/enterprise_info.css">
+    <script src="${pageContext.request.contextPath}/static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/user/enterprise_info.js"></script>
 </head>
 <body>
-企业信息
+<div class="container">
+    <%@include file="header.jsp"%>
+    企业信息
+</div>
+
 </body>
 </html>

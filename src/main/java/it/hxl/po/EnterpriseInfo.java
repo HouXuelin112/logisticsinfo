@@ -14,6 +14,28 @@ public class EnterpriseInfo {
     private String handset;
     private String fax;
     private String email;
+
+    @Override
+    public String toString() {
+        return "EnterpriseInfo{" +
+                "id=" + id +
+                ", enterpriseSort='" + enterpriseSort + '\'' +
+                ", enterpriseName='" + enterpriseName + '\'' +
+                ", operation='" + operation + '\'' +
+                ", workArea='" + workArea + '\'' +
+                ", address='" + address + '\'' +
+                ", phone='" + phone + '\'' +
+                ", linkMan='" + linkMan + '\'' +
+                ", handset='" + handset + '\'' +
+                ", fax='" + fax + '\'' +
+                ", email='" + email + '\'' +
+                ", http='" + http + '\'' +
+                ", intro='" + intro + '\'' +
+                ", issueDate=" + issueDate +
+                ", user=" + user +
+                '}';
+    }
+
     private String http;
     private String intro;
     private Date issueDate;

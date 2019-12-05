@@ -10,7 +10,7 @@
 	background-color: azure;
 }
 #header, #body, #footer, hr{
-	min-width: 700px;
+	min-width: 1200px;
 	width: 95%;
 	margin: 5px auto;
 }
@@ -18,7 +18,7 @@
 	height: 70px;
 	line-height: 70px;
 	font-family: STXingkai;
-	font-size: 20px;
+	font-size: 30px;
 }
 #body{
 	height: 70%;
@@ -32,9 +32,9 @@
 	width: 300px;
 	height: 350px;
 	float: right;
-	margin: 50px 150px;
+	margin: 95px 80px;
+	margin-left: 0px;
 	text-align: center;
-	padding-top: 20px;
 	border: 1px solid white;
 	background-color: white;
 }
@@ -45,6 +45,7 @@
 	margin: 10px auto;
 }
 .log{
+	overflow: hidden;
 	border-radius: 5px;
 	border: 1px solid darkgray;
 }
@@ -80,4 +81,16 @@ a{
 
 .msg{
 	color: red;
+}
+#myCarousel2{
+	width: 65%;
+	height: 400px;
+	margin: 65px 10px;
+	display: inline-block;
+	box-shadow: 1px 1px 1px 1px darkblue;
+}
+
+#myCarousel2 img{
+	width: 100%;
+	height: 400px;
 }
