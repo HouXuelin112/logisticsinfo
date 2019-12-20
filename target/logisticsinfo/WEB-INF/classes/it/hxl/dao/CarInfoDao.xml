@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="it.hxl.dao.CarInfoDao">
+
+    <insert id="insertCar" parameterType="car">
+        insert into cars_info(tradeMark, brand, style, carLoad, driverName, driverTime, licenceNumber, licenceStyle, transportStyle, linkMan, linkPhone, remark, issueDate, user_id)
+        values(#{tradeMark}, #{brand}, #{style}, #{carLoad}, #{driverName}, #{driverTime}, #{licenceNumber}, #{licenceStyle}, #{transportStyle}, #{linkMan}, #{linkPhone}, #{remark}, #{issueDate}, #{user.id});
+    </insert>
+
+
+    <update id="updateCarById" parameterType="car">
+        update cars_info
+        <set>
+            <if test="tradeMark != null and tradeMark != ''">
+                tradeMark = #{tradeMark},
+            </if>
+            <if test="brand != null and brand != ''">
+                brand = #{brand},
+            </if>
+            <if test="style != null and style != ''">
+                style = #{style},
+            </if>
+            <if test="carLoad != 0 and carLoad != ''">
+                carLoad = #{carLoad},
+            </if>
+            <if test="driverName != null and driverName != ''">
+                driverName = #{driverName},
+            </if>
+            <if test="driverTime != null and driverTime != ''">
+                driverTime = #{driverTime},
+            </if>
+            <if test="licenceNumber != null and licenceNumber != ''">
+                licenceNumber = #{licenceNumber},
+            </if>
+            <if test="licenceStyle != null and licenceStyle != ''">
+                licenceStyle = #{licenceStyle},
+            </if>
+            <if test="transportStyle != null and transportStyle != ''">
+                transportStyle = #{transportStyle},
+            </if>
+            <if test="linkMan != null and linkMan != ''">
+                linkMan = #{linkMan},
+            </if>
+            <if test="linkPhone != null and linkPhone != ''">
+                linkPhone = #{linkPhone},
+            </if>
+            <if test="remark != null and remark != ''">
+                remark = #{remark},
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+
+    <delete id="deleteCarById" parameterType="int">
+        delete from cars_info where id=#{id}
+    </delete>
+
+    <select id="findAllCars" resultMap="carsInfo" parameterType="car">
+        select cars_info.*, users.name,  users.username, users.password, users.phone, users.email, users.gender, users.question, users.result, users.issueDate
+        from cars_info, users
+        where cars_info.user_id = users.id
+        <if test="user.id != null and user.id != 0">
+            and users.id=#{user.id}
+        </if>
+        <if test="id != 0">
+            and cars_info.id=#{id}
+        </if>
+        <if test="tradeMark != null and tradeMark != ''">
+            and tradeMark=#{tradeMark}
+        </if>
+        <if test="brand != null and brand != ''">
+            and brand=#{brand}
+        </if>
+        <if test="style != null and style != ''">
+            and style=#{style}
+        </if>
+        <if test="carLoad != 0">
+            and carLoad=#{carLoad}
+        </if>
+        <if test="transportStyle != null and transportStyle != ''">
+            and transportStyle = #{transportStyle}
+        </if>
+    </select>
+    <!--
+    private int id;
+    private String tradeMark;
+    private String brand;
+    private String style;
+    private float carLoad;
+    private String driverName;
+    private String driverTime;
+    private String licenceNumber;
+    private String licenceStyle;
+    private String linkMan;
+    private String linkPhone;
+    private String remark;
+    private String issueDate;
+    private User user;
+-->
+    <resultMap id="carsInfo" type="car">
+        <id property="id" column="id"/>
+        <result property="tradeMark" column="tradeMark"/>
+        <result property="brand" column="brand"/>
+        <result property="style" column="style"/>
+        <result property="carLoad" column="carLoad"/>
+        <result property="driverName" column="driverName"/>
+        <result property="driverTime" column="driverTime"/>
+        <result property="licenceNumber" column="licenceNumber"/>
+        <result property="licenceStyle" column="licenceStyle"/>
+        <result property="transportStyle" column="transportStyle"/>
+        <result property="linkMan" column="linkMan"/>
+        <result property="linkPhone" column="linkPhone"/>
+        <result property="remark" column="remark"/>
+        <result property="issueDate" column="issueDate"/>
+        <association property="user" javaType="user">
+            <id property="id" column="user_id"/>
+            <result property="name" column="name"/>
+            <result property="username" column="username"/>
+            <result property="password" column="password"/>
+            <result column="phone" property="phone"/>
+            <result property="email" column="email"/>
+            <result property="gender" column="gender"/>
+            <result property="question" column="question"/>
+            <result column="result" property="result"/>
+            <result property="issueDate" column="issueDate"/>
+        </association>
+    </resultMap>
+<!--    private String username;
+    private String password;
+    private String email;
+    private String gender;
+    private String phone;
+    private String question;
+    private String result;
+    private String issueDate;
+    private String name;-->
+</mapper>

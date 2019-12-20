@@ -10,8 +10,12 @@
     <context:component-scan base-package="it.hxl.controller"/>
     <!--视图解析器-->
     <bean id="viewRelover" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/jsp/"></property>
-        <property name="suffix" value=".jsp"></property>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <bean id="stringHttpMessageConverter" class="org.springframework.http.converter.StringHttpMessageConverter">
+        <property name="defaultCharset" value="UTF-8"/>
     </bean>
 
     <!--设置静态资源的访问映射，不被拦截-->

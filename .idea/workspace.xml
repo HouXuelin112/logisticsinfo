@@ -2,84 +2,147 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="logisticsinfo:war" />
       <artifact name="logisticsinfo:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aec15bed-de1d-4e3b-ba0b-d904bacb1135" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/AdminDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/AdminDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/LogisticsInfoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/LogisticsInfoDao.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/jstltag/DateTag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/services/AdminService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/services/LogisticsInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dateConvert.tld" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/sui-append.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/sui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/car_info.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/enterprise_info.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/goods_info.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/Transaction_detail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/detail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/lib.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/mountain.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/setting.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/jquery-3.3.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/sui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/user/car_info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/user/enterprise_info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/user/goods_info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/user/maini.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/it/hxl/MyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/解决 java.lang.NoClassDefFoundError comfasterxmljacksondatabindexcInvalidDefinitionException 的办法.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/CarInfoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/CarInfoDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/EnterpriseDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/EnterpriseDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/GoodsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/GoodsDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/services/CarInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/services/EnterpriseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/services/GoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/it/hxl/test/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/carInfo_list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/enterpriseInfo_list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/goodsInfo_list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/sui_tools.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/addCarInfo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/addEnterpriseInfo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/addGoodsInfo.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/findPassword.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/regist.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/findPassword.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/fonts/icon-pc.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/fonts/icon-pc.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/cars/car1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/cars/car10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/cars/car2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/cars/car3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/cars/car4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/cars/car5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/cars/car6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/cars/car7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/cars/car8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/cars/car9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/enterprises/e1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/enterprises/e10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/enterprises/e2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/enterprises/e3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/enterprises/e4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/enterprises/e5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/enterprises/e6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/enterprises/e7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/enterprises/e8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/enterprises/e9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/goods/g1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/goods/g10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/goods/g2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/goods/g3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/goods/g4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/goods/g5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/goods/g6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/goods/g7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/goods/g8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/goods/g9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/images/goods/goods.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/regist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/js/user/findPassword.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/controller/RegistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/controller/RegistController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/mapper/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/UserDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/po/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/po/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/dao/LogisticsInfoDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/LogisticsInfoDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/dao/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/jstltag/DateTag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/jstltag/DateTag.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/po/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/po/Car.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/po/EnterpriseInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/po/EnterpriseInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/po/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/po/Goods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/po/LogisticsInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/po/LogisticsInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/po/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/po/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/hxl/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/hxl/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/adminLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/adminLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/regist.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/car_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/car_info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/enterprise_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/enterprise_info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/goods_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/goods_info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/userLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/user/userLogin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/user/car_info.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/car_info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/user/enterprise_info.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/enterprise_info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/user/goods_info.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/goods_info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/user/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/user/userLogin.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/user/userLogin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/controller/RegistController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/controller/RegistController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/user/car_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/user/car_info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/user/enterprise_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/user/enterprise_info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/user/goods_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/user/goods_info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/it/hxl/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/it/hxl/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/po/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/po/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/dao/LogisticsInfoDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/dao/LogisticsInfoDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/dao/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/jstltag/DateTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/jstltag/DateTag.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/po/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/po/Car.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/po/EnterpriseInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/po/EnterpriseInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/po/Goods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/po/Goods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/po/LogisticsInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/po/LogisticsInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/po/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/controller/RegistController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/controller/RegistController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/it/hxl/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/it/hxl/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/Admin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/dao/LogisticsInfoDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/dao/LogisticsInfoDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/dao/UserDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/dao/UserDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/jstltag/DateTag.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/jstltag/DateTag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/mapper/LogisticsInfoDao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/mapper/UserDao.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/Car.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/EnterpriseInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/EnterpriseInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/Goods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/Goods.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/LogisticsInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/LogisticsInfo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/po/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/classes/it/hxl/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/admin/adminLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/admin/adminLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/regist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/regist.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/car_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/car_info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/enterprise_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/enterprise_info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/goods_info.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/goods_info.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/userLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/jsp/user/userLogin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/static/css/user/car_info.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/static/css/user/car_info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/static/css/user/enterprise_info.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/static/css/user/enterprise_info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/static/css/user/goods_info.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/static/css/user/goods_info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/static/css/user/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/static/css/user/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/logisticsinfo/static/css/user/userLogin.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/static/css/user/userLogin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/static/js/user/car_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/static/js/user/car_info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/static/js/user/enterprise_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/static/js/user/enterprise_info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/static/js/user/goods_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/static/js/user/goods_info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/logisticsinfo/static/js/user/maini.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/logisticsinfo/static/js/user/maini.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/logisticsinfo.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/it/hxl/MyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/it/hxl/MyTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,8 +174,9 @@
         <option value="FxmlFile" />
         <option value="spring-beans.schema" />
         <option value="mybatis-config" />
-        <option value="Jsp File" />
+        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Jsp File" />
         <option value="Interface" />
         <option value="mapper" />
         <option value="Class" />
@@ -142,9 +206,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;sqlserver" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/static/images/goods" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -160,12 +225,15 @@
       <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\WEB-INF\jsp\user" />
       <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\WEB-INF" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="it.hxl.test" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\static\images" />
-      <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\static\js" />
-      <recent name="E:\Java\idea\logisticsinfo\target\logisticsinfo\static\images" />
-      <recent name="E:\Java\idea\logisticsinfo\target\logisticsinfo\static\css\user" />
-      <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\static\js\user" />
+      <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\static\images\goods" />
+      <recent name="E:\Java\idea\logisticsinfo\target\logisticsinfo\static\images\goods" />
+      <recent name="E:\Java\idea\logisticsinfo\target\logisticsinfo\static\images\enterprises" />
+      <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\static\images\enterprises" />
+      <recent name="E:\Java\idea\logisticsinfo\src\main\webapp\static\images\cars" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -181,20 +249,23 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.19">
-    <configuration name="Mytest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="it.hxl.Mytest" />
+    <configuration name="MyTest.testCon (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="logisticsinfo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.hxl.*" />
+          <option name="PATTERN" value="it.hxl.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="it.hxl.test" />
+      <option name="MAIN_CLASS_NAME" value="it.hxl.test.MyTest" />
+      <option name="METHOD_NAME" value="testCon" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.testP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyTest.testCon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="logisticsinfo" />
       <extension name="coverage">
         <pattern>
@@ -204,23 +275,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="it.hxl" />
       <option name="MAIN_CLASS_NAME" value="it.hxl.MyTest" />
-      <option name="METHOD_NAME" value="testP" />
+      <option name="METHOD_NAME" value="testCon" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Mytest.testSql" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyTest.testInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="logisticsinfo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="it.hxl.*" />
+          <option name="PATTERN" value="it.hxl.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="it.hxl" />
-      <option name="MAIN_CLASS_NAME" value="it.hxl.Mytest" />
-      <option name="METHOD_NAME" value="testSql" />
+      <option name="PACKAGE_NAME" value="it.hxl.test" />
+      <option name="MAIN_CLASS_NAME" value="it.hxl.test.MyTest" />
+      <option name="METHOD_NAME" value="testInsert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.testSplit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="logisticsinfo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.hxl.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="it.hxl.test" />
+      <option name="MAIN_CLASS_NAME" value="it.hxl.test.MyTest" />
+      <option name="METHOD_NAME" value="testSplit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -299,11 +386,52 @@
         </option>
       </method>
     </configuration>
+    <configuration name="car_info.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 9.0.19" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/jsp/user/car_info.jsp" />
+      <deployment>
+        <artifact name="logisticsinfo:war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/logisticsinfo_war" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="car_info_jsp_logisticsinfo" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="logisticsinfo:war" />
+        </option>
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyTest.testP" />
-        <item itemvalue="JUnit.Mytest.testSql" />
-        <item itemvalue="Application.Mytest" />
+        <item itemvalue="JUnit.MyTest.testInsert" />
+        <item itemvalue="JUnit.MyTest.testCon (1)" />
+        <item itemvalue="JUnit.MyTest.testSplit" />
+        <item itemvalue="JUnit.MyTest.testCon" />
+        <item itemvalue="Tomcat Server.car_info.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +458,27 @@
       <workItem from="1575363484376" duration="26130000" />
       <workItem from="1575428354545" duration="19401000" />
       <workItem from="1575517784771" duration="3466000" />
-      <workItem from="1575541349140" duration="1948000" />
+      <workItem from="1575541349140" duration="2484000" />
+      <workItem from="1575637819108" duration="2999000" />
+      <workItem from="1575645910211" duration="3812000" />
+      <workItem from="1575695123088" duration="7522000" />
+      <workItem from="1575732559097" duration="4835000" />
+      <workItem from="1575786275472" duration="16595000" />
+      <workItem from="1575857802474" duration="9914000" />
+      <workItem from="1575955141378" duration="9569000" />
+      <workItem from="1575980912802" duration="7101000" />
+      <workItem from="1576038078788" duration="35873000" />
+      <workItem from="1576152909041" duration="11557000" />
+      <workItem from="1576306381622" duration="1525000" />
+      <workItem from="1576308699542" duration="5511000" />
+      <workItem from="1576392305857" duration="5057000" />
+      <workItem from="1576461879679" duration="6849000" />
+      <workItem from="1576478570284" duration="22199000" />
+      <workItem from="1576560854815" duration="9790000" />
+      <workItem from="1576641703808" duration="17292000" />
+      <workItem from="1576756133806" duration="13630000" />
+      <workItem from="1576816624751" duration="3442000" />
+      <workItem from="1576839591461" duration="15961000" />
     </task>
     <servers />
   </component>

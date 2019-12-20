@@ -9,6 +9,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath }/static/css/admin/adminLogin.css"/>
 </head>
 <body>
+<%@include file="../regist.jsp"%>
 	<div class="container">
 		<div id="header">
 			<h1>物流信息网络</h1>
@@ -31,7 +32,7 @@
 					</div>
 					<div class="log sub"><input type="submit" value="登录"/></div>
 					<div><a class="left" href="${pageContext.request.contextPath }/user/userLogin">&lt;&lt;会员登录</a><a class="right" href="${pageContext.request.contextPath }/admin/findPassword">忘记密码&gt;&gt;</a></div>
-					<div><a href="${pageContext.request.contextPath }/regist">注册新账号</a></div>
+					<div><a data-toggle="modal" data-target="#myModal">注册新账号</a></div>
 				</form>
 			</div>
 		</div>

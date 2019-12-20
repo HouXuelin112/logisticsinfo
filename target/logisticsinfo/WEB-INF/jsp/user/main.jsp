@@ -23,7 +23,7 @@
             <div class="detail_title">
                 标题
             </div>
-            <div id="detail_body">
+            <div id="detail_body" class="detail_body">
                 <div class="detail_time">2019-10-16 22:43:32</div>
                 <div class="detail_name">侯雪林</div>
             </div>
@@ -37,8 +37,9 @@
             <form>
                 <label for="logistics_title"> 物流标题 </label>
                 <input type="text" name="logistics_title" id="logistics_title" class="input" data-toggle="autocomplete" data-lookup="[
-                <c:forEach var="val" items="${logisticsInfos}"><%--为输入框提供自动补全--%>
-                &quot;${val.title}&quot;
+                &quot;${logisticsInfos[0].title}&quot;
+                <c:forEach var="val" items="${logisticsInfos}" begin="1"><%--为输入框提供自动补全--%>
+                ,&quot;${val.title}&quot;
                 </c:forEach>
                 ]">
                 <label for="time">发布时间</label>

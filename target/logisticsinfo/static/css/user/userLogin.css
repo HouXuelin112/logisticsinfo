@@ -6,7 +6,7 @@
 .container {
 	width: 95%;
 	height: 800px;
-	margin: 50px auto;
+	margin: 20px auto;
 	background-color: azure;
 }
 #header, #body, #footer, hr{
@@ -15,8 +15,8 @@
 	margin: 5px auto;
 }
 #header{
-	height: 70px;
-	line-height: 70px;
+	height: 40px;
+	line-height: 40px;
 	font-family: STXingkai;
 	font-size: 30px;
 }

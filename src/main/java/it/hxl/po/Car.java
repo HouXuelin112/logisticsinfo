@@ -1,25 +1,32 @@
 package it.hxl.po;
 
-import java.util.Date;
-
 /**
  * 对应cars_info
  */
 public class Car {
     private int id;
-    private String tradeMark;
-    private String brand;
-    private String style;
-    private float carLoad;
-    private String driverName;
-    private String driverTime;
-    private String licenceNumber;
-    private String licenceStyle;
-    private String linkMan;
-    private String linkPhone;
-    private String remark;
-    private Date issueDate;
-    private User user;
+    private String tradeMark; //车牌号
+    private String brand;   //车辆品牌
+    private String style;   //车辆类型
+    private float carLoad;  //车辆载重
+    private String driverName;  //驾驶员姓名
+    private String driverTime;  //驾驶时间
+    private String licenceNumber;   //驾照编号
+    private String licenceStyle;    //驾照类型
+    private String transportStyle;  //运输类型
+    private String linkMan;     //联系人
+    private String linkPhone;   //联系人电话
+    private String remark;  //备注
+    private String issueDate;   //发布时间
+    private User user;  //发布人
+
+    public String getTransportStyle() {
+        return transportStyle;
+    }
+
+    public void setTransportStyle(String transportStyle) {
+        this.transportStyle = transportStyle;
+    }
 
     public Car() {
     }
@@ -44,6 +51,7 @@ public class Car {
                 ", driverTime='" + driverTime + '\'' +
                 ", licenceNumber='" + licenceNumber + '\'' +
                 ", licenceStyle='" + licenceStyle + '\'' +
+                ", transportStyle='" + transportStyle + '\'' +
                 ", linkMan='" + linkMan + '\'' +
                 ", linkPhone='" + linkPhone + '\'' +
                 ", remark='" + remark + '\'' +
@@ -140,11 +148,11 @@ public class Car {
         this.remark = remark;
     }
 
-    public Date getIssueDate() {
+    public String getIssueDate() {
         return issueDate;
     }
 
-    public void setIssueDate(Date issueDate) {
+    public void setIssueDate(String issueDate) {
         this.issueDate = issueDate;
     }
 
@@ -156,7 +164,7 @@ public class Car {
         this.user = user;
     }
 
-    public Car(int id, String tradeMark, String brand, String style, float carLoad, String driverName, String driverTime, String licenceNumber, String licenceStyle, String linkMan, String linkPhone, String remark, Date issueDate, User user) {
+    public Car(int id, String tradeMark, String brand, String style, float carLoad, String driverName, String driverTime, String licenceNumber, String licenceStyle, String transportStyle, String linkMan, String linkPhone, String remark, String issueDate, User user) {
         this.id = id;
         this.tradeMark = tradeMark;
         this.brand = brand;
@@ -166,6 +174,7 @@ public class Car {
         this.driverTime = driverTime;
         this.licenceNumber = licenceNumber;
         this.licenceStyle = licenceStyle;
+        this.transportStyle = transportStyle;
         this.linkMan = linkMan;
         this.linkPhone = linkPhone;
         this.remark = remark;

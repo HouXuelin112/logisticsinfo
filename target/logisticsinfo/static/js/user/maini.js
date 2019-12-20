@@ -47,7 +47,7 @@ function addSelectListener(selectBtn) {
                 var x = 1;
                 var int = setInterval(function () {
                     x += 1;
-                    $(".msg-con").text("请求详情出错");
+                    $(".msg-con").text("请求出错");
                     $("#error").show();
                     if(x == 3){
                         clearInterval(int);
@@ -93,7 +93,7 @@ function addSelectAllLogisToBtn(all) {
                 var x = 1;
                 var int = setInterval(function () {
                     x += 1;
-                    $(".msg-con").text("请求详情出错");
+                    $(".msg-con").text("请求出错");
                     $("#error").show();
                     if(x == 3){
                         clearInterval(int);

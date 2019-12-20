@@ -1,7 +1,5 @@
 package it.hxl.po;
 
-import java.util.Date;
-
 public class EnterpriseInfo {
     private int id;
     private String enterpriseSort;
@@ -14,6 +12,10 @@ public class EnterpriseInfo {
     private String handset;
     private String fax;
     private String email;
+    private String http;
+    private String intro;
+    private String issueDate;
+    private User user;
 
     @Override
     public String toString() {
@@ -36,10 +38,7 @@ public class EnterpriseInfo {
                 '}';
     }
 
-    private String http;
-    private String intro;
-    private Date issueDate;
-    private User user;
+
 
     public int getId() {
         return id;
@@ -145,12 +144,12 @@ public class EnterpriseInfo {
         this.intro = intro;
     }
 
-    public Date getIssueDate() {
+    public String getIssueDate() {
         return issueDate;
     }
 
-    public void setIssueDate(Date issueDate) {
-        this.issueDate = issueDate;
+    public void setIssueDate(String issueDate) {
+        this.issueDate = issueDate.split(" ")[0];
     }
 
     public User getUser() {
@@ -161,7 +160,7 @@ public class EnterpriseInfo {
         this.user = user;
     }
 
-    public EnterpriseInfo(int id, String enterpriseSort, String enterpriseName, String operation, String workArea, String address, String phone, String linkMan, String handset, String fax, String email, String http, String intro, Date issueDate, User user) {
+    public EnterpriseInfo(int id, String enterpriseSort, String enterpriseName, String operation, String workArea, String address, String phone, String linkMan, String handset, String fax, String email, String http, String intro, String issueDate, User user) {
         this.id = id;
         this.enterpriseSort = enterpriseSort;
         this.enterpriseName = enterpriseName;

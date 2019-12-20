@@ -3,6 +3,153 @@
     border: 1px solid grey;
     margin: 50px auto;
     width: 1500px;
-    height: 600px;
+    height: 1000px;
     background-color: white;
+}
+
+.select{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    text-align: center;
+    font-family: "microsoft yahei";
+    color: darkslategrey;
+    line-height: 30px;
+}
+
+.select .input{
+    width: 150px;
+    height: 25px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+#sub{
+    width: 100px;
+    height: 25px;
+    color: white;
+    border-radius: 3px;
+    font-weight: bold;
+    border: 1px solid darkgray;
+    background-color: dodgerblue;
+}
+
+
+.sub{
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    background-color: #1E90FF;
+    color: white;
+    border: 1px solid #1E90FF;
+    border-radius: 5px;
+}
+
+.enterpriseInfoBox{
+    width: 1300px;
+    height: 300px;
+    border: 1px solid black;
+    /*border: 1px solid black;*/
+    border-radius: 10px;
+    margin: 0 auto;
+    clear: both;
+}
+.E_name{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 10px;
+    background-color: lightgray;
+    background-image: linear-gradient(to right, lightgray, gray);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.E_name button{
+    float: right;
+    margin: 5px 10px;
+    border: none;
+    background:none;
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.enterpriseInfo{
+    margin: 0 auto;
+    width: 100%;
+    height: 840px;
+    /*border: 1px solid red;*/
+    overflow: auto;
+}
+
+.enterpriseInfoBox{
+    width: 1300px;
+    height: 300px;
+    /*border: 1px solid red;*/
+    border-radius: 10px;
+    margin: 0 auto 20px;
+    clear: both;
+}
+
+.leftImg{
+    float: left;
+    width: 250px;
+    height: 250px;
+    /*border: 1px solid red;*/
+    margin: 5px 30px 5px 5px;
+}
+.leftImg img{
+    width: 250px;
+    height: 250px;
+    vertical-align: middle;
+}
+.centerInfo{
+    float: left;
+    width: 400px;
+    height: 250px;
+    /*border: 1px solid black;*/
+    margin: 5px 30px 5px 5px;
+    font-family: "microsoft yahei";
+    font-size: 16px;
+}
+.enterpriseInfoBox li{
+    list-style: none;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.rightInfo{
+    float: left;
+    width: 530px;
+    height: 250px;
+    /*border: 1px solid red;*/
+    margin: 5px 10px 5px 5px;
+    font-family: "microsoft yahei";
+    font-size: 16px;
+}
+li .down{
+    display: inline-block;
+    margin-bottom: -8px;
+    width: 0;
+    height: 0;
+    border: 10px solid  white;
+    border-top: 10px solid  #A9A9A9;
+}
+.rightInfo ul div.intro{
+    width: 100%;
+    height: 190px;
+    margin-top: 5px;
+    text-indent: 30px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    border: 1px solid grey;
+    overflow: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.E_issueDate, .E_user{
+    display: inline-block;
+    width: 48%;
 }

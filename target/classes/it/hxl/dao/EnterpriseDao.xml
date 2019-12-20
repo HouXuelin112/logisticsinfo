@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="it.hxl.dao.EnterpriseDao">
+
+    <update id="updateEnterprise" parameterType="enterpriseInfo">
+        update enterprise_info
+        <set>
+            <if test="enterpriseSort != null and enterpriseSort != ''">
+                enterpriseSort = #{enterpriseSort},
+            </if>
+            <if test="enterpriseName != null and enterpriseName != ''">
+                enterpriseName = #{enterpriseName},
+            </if>
+            <if test="operation != null and operation != ''">
+                operation = #{operation},
+            </if>
+            <if test="workArea != null and workArea != ''">
+                workArea = #{workArea},
+            </if>
+            <if test="address != null and address != ''">
+                address = #{address},
+            </if>
+            <if test="phone != null and phone != ''">
+                phone = #{phone},
+            </if>
+            <if test="linkMan != null and linkMan != ''">
+                linkMan = #{linkMan},
+            </if>
+            <if test="handset != null and handset != ''">
+                handset = #{handset},
+            </if>
+            <if test="fax != null and fax != ''">
+                fax = #{fax},
+            </if>
+            <if test="email != null and email != ''">
+                email = #{email},
+            </if>
+            <if test="http != null and http != ''">
+                http = #{http},
+            </if>
+            <if test="intro != null and intro != ''">
+                intro = #{intro},
+            </if>
+            <if test="issueDate != null and issueDate != ''">
+                issueDate = #{issueDate},
+            </if>
+            <if test="user.id != 0 and http != ''">
+                user_id = #{user.id},
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+
+    <insert id="insertEnterprise" parameterType="enterpriseInfo">
+        insert into enterprise_info(enterpriseSort, enterpriseName, operation, workArea, address, phone, linkMan, handset, fax, email, http, intro, issueDate, user_id)
+        values(#{enterpriseSort}, #{enterpriseName}, #{operation}, #{workArea}, #{address}, #{phone}, #{linkMan}, #{handset}, #{fax}, #{email}, #{http}, #{intro}, #{issueDate}, #{user.id})
+    </insert>
+
+    <delete id="deleteById" parameterType="int">
+        delete from enterprise_info where id=#{id}
+    </delete>
+
+    <select id="findAll" parameterType="enterpriseInfo" resultMap="enterpriseInfoMap">
+        select enterprise_info.*, users.name,  users.username, users.password, users.phone, users.email, users.gender, users.question, users.result, users.issueDate from enterprise_info, users
+        where user_id = users.id
+        <if test="id != 0">
+            and enterprise_info.id = #{id}
+        </if>
+        <if test="enterpriseName != '' and enterpriseName != null">
+            and enterpriseName = #{enterpriseName}
+        </if>
+        <if test="enterpriseSort != null and enterpriseSort != ''">
+            and enterpriseSort = #{enterpriseSort}
+        </if>
+        <if test="user.id != 0">
+            and user_id = #{user.id}
+        </if>
+    </select>
+
+    <resultMap id="enterpriseInfoMap" type="enterpriseInfo">
+        <id property="id" column="id"/>
+        <result property="enterpriseSort" column="enterpriseSort"/>
+        <result property="enterpriseName" column="enterpriseName"/>
+        <result property="operation" column="operation"/>
+        <result property="workArea" column="workArea"/>
+        <result property="address" column="address"/>
+        <result property="phone" column="phone"/>
+        <result property="linkMan" column="linkMan"/>
+        <result property="handset" column="handset"/>
+        <result property="fax" column="fax"/>
+        <result property="email" column="email"/>
+        <result property="http" column="http"/>
+        <result property="intro" column="intro"/>
+        <result property="issueDate" column="issueDate"/>
+        <association property="user" javaType="user">
+            <id property="id" column="user_id"/>
+            <result property="name" column="name"/>
+            <result property="username" column="username"/>
+            <result property="password" column="password"/>
+            <result column="phone" property="phone"/>
+            <result property="email" column="email"/>
+            <result property="gender" column="gender"/>
+            <result property="question" column="question"/>
+            <result column="result" property="result"/>
+            <result property="issueDate" column="issueDate"/>
+        </association>
+    </resultMap>
+
+</mapper>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="it.hxl.dao.GoodsDao">
+
+    <delete id="deleteGoods" parameterType="int">
+        delete from goods where id = #{id}
+    </delete>
+
+    <update id="updateGoods" parameterType="goods">
+        update goods
+        <set>
+            <if test="goodsStyle != null and goodsStyle != ''">
+                goodsStyle = #{goodsStyle},
+            </if>
+            <if test="goodsName != null and goodsName != ''">
+                goodsName = #{goodsName},
+            </if>
+            <if test="goodsUnit != null and goodsUnit != ''">
+                goodUnit = #{goodsUnit},
+            </if>
+            <if test="goodsCount != 0 and goodsCount != ''">
+                goodsCount = #{goodsCount},
+            </if>
+            <if test="transportTime != 0 and transportTime != ''">
+                transportTime = #{transportTime},
+            </if>
+            <if test="startOmit != null and startOmit != ''">
+                startOmit = #{startOmit},
+            </if>
+            <if test="startCity != null and startCity != ''">
+                startCity = #{startCity},
+            </if>
+            <if test="endOmit != null and endOmit != ''">
+                endOmit = #{endOmit},
+            </if>
+            <if test="endCity != null and endCity != ''">
+                endCity = #{ endCity},
+            </if>
+            <if test="style != null and style != ''">
+                style = #{style},
+            </if>
+            <if test="phone != null and  phone != ''">
+                phone = #{phone},
+            </if>
+            <if test="link != null and link != ''">
+                link = #{link},
+            </if>
+            <if test="remark != null and remark != ''">
+                remark = #{remark},
+            </if>
+            <if test="car.id != 0">
+                request = #{car.id},
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+
+
+    <insert id="insertGoods" parameterType="goods">
+        insert into goods(goodsStyle, goodsName, goodsCount, goodUnit, startOmit, startCity, endOmit, endCity, style, transportTime, phone, link, issueDate, remark, user_id, request)
+        values(#{goodsStyle},#{goodsName}, #{goodsCount}, #{goodsUnit}, #{startOmit}, #{startCity}, #{endOmit}, #{endCity}, #{style}, #{transportTime}, #{phone}, #{link}, #{issueDate}, #{remark}, #{user.id}, #{car.id})
+    </insert>
+
+    <select id="findGoods" resultMap="goodsMap" parameterType="goods">
+        select goods.*,user1.*,cars_info.*, user2.id as u2_id, user2.username as u2_username, user2.password as u2_password, user2.email as u2_email, user2.gender as u2_gender, user2.phone as u2_phone, user2.question as u2_question, user2.result as u2_result, user2.issueDate as u2_issueDate, user2.name as u2_name from goods,users as user1, cars_info, users as user2
+        where goods.user_id=user1.id and goods.request = cars_info.id and cars_info.user_id = user2.id
+        <if test="goodsStyle != null and goodsStyle != ''">
+            and goodsStyle = #{goodsStyle}
+        </if>
+        <if test="goodsName != null and goodsName != ''">
+            and goodsName = #{goodsName}
+        </if>
+        <if test="user.id != 0">
+            and goods.user_id = #{user.id}
+        </if>
+        <if test="id != 0">
+            and goods.id = #{id}
+        </if>
+    </select>
+    
+    <resultMap id="goodsMap" type="goods">
+        <id property="id" column="id"/>
+        <result column="goodsStyle" property="goodsStyle"/>
+        <result property="goodsName" column="goodsName"/>
+        <result column="goodsCount" property="goodsCount"/>
+        <result column="goodUnit" property="goodsUnit"/>
+        <result property="startOmit" column="startOmit"/>
+        <result column="startCity" property="startCity"/>
+        <result column="endOmit" property="endOmit"/>
+        <result property="endCity" column="endCity"/>
+        <result column="style" property="style"/>
+        <result column="transportTime" property="transportTime"/>
+        <result property="phone" column="phone"/>
+        <result column="link" property="link"/>
+        <result property="issueDate" column="issueDate"/>
+        <result column="remark" property="remark"/>
+        <association property="user" javaType="user">
+            <id column="user_id" property="id"/>
+            <result property="name" column="name"/>
+            <result property="username" column="username"/>
+            <result property="password" column="password"/>
+            <result column="phone" property="phone"/>
+            <result property="email" column="email"/>
+            <result property="gender" column="gender"/>
+            <result property="question" column="question"/>
+            <result column="result" property="result"/>
+            <result property="issueDate" column="issueDate"/>
+        </association>
+        <association property="car" javaType="car">
+            <id property="id" column="request"/>
+            <result property="tradeMark" column="tradeMark"/>
+            <result property="brand" column="brand"/>
+            <result property="style" column="style"/>
+            <result property="carLoad" column="carLoad"/>
+            <result property="driverName" column="driverName"/>
+            <result property="driverTime" column="driverTime"/>
+            <result property="licenceNumber" column="licenceNumber"/>
+            <result property="licenceStyle" column="licenceStyle"/>
+            <result property="transportStyle" column="transportStyle"/>
+            <result property="linkMan" column="linkMan"/>
+            <result property="linkPhone" column="linkPhone"/>
+            <result property="remark" column="remark"/>
+            <result property="issueDate" column="issueDate"/>
+            <association property="user" javaType="user">
+                <id property="id" column="u2_id"/>
+                <result property="name" column="u2_name"/>
+                <result property="username" column="u2_username"/>
+                <result property="password" column="u2_password"/>
+                <result column="u2_phone" property="phone"/>
+                <result property="email" column="u2_email"/>
+                <result property="gender" column="u2_gender"/>
+                <result property="question" column="u2_question"/>
+                <result column="u2_result" property="result"/>
+                <result property="issueDate" column="u2_issueDate"/>
+            </association>
+        </association>
+    </resultMap>
+
+</mapper>

@@ -68,7 +68,6 @@
 </head>
 <body>
 <div>
-    <p id="reg">还没有身份?<a href="${pageContext.request.contextPath }/regist" id="reg1" target="_blank"> <img src="${pageContext.request.contextPath }/static/images/regist.png">点击注册&gt;&gt;</a> </p>
     <p id="wel">欢迎来到物流信息网</p>
     <ul>
         <li><a href="${pageContext.request.contextPath }/user/userLogin" class="log" target="_blank">&lt;&lt;会员登陆<img alt="member" src="${pageContext.request.contextPath }/static/images/member.png"></a> </li>

@@ -1,7 +1,5 @@
 package it.hxl.po;
 
-import java.util.Date;
-
 public class User {
     private int id;
     private String username;
@@ -11,7 +9,7 @@ public class User {
     private String phone;
     private String question;
     private String result;
-    private Date issueDate;
+    private String issueDate;
     private String name;
 
     public String getUsername() {
@@ -26,7 +24,7 @@ public class User {
         return question;
     }
 
-    public User(int id, String username, String password, String email, String gender, String phone, String question, String result, Date issueDate, String name) {
+    public User(int id, String username, String password, String email, String gender, String phone, String question, String result, String issueDate, String name) {
         this.id = id;
         this.username = username;
         this.password = password;
@@ -91,11 +89,11 @@ public class User {
         this.phone = phone;
     }
 
-    public Date getIssueDate() {
+    public String getIssueDate() {
         return issueDate;
     }
 
-    public void setIssueDate(Date issueDate) {
+    public void setIssueDate(String issueDate) {
         this.issueDate = issueDate;
     }
 

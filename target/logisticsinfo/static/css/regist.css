@@ -1,0 +1,102 @@
+.modal-body{
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 3px;
+}
+.modal-body div{
+    width: 100px;
+    height: 30px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.registbox{
+    display: none;
+    background-color: #FAF2CC;
+    width: 400px;
+    height: 510px;
+    border: 1px solid black;
+    box-shadow: 1px 1px #000000;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 10;
+}
+
+.registbox>div{
+    width: 90%;
+    /* border: 1px solid red; */
+    line-height: 40px;
+    margin: 10px auto;
+}
+.regist_title{
+    height: 40px;
+    text-align: center;
+}
+.regist_body div{
+    text-align: right;
+    width: 90%;
+    height: 40px;
+    /* border: 1px solid red; */
+    font-size: 15px;
+    font-family: "microsoft yahei", sans-serif;
+}
+
+.regist_body div input{
+    width: 200px;
+    height: 20px;
+    border: 1px solid #0088CC;
+    border-radius: 5px;
+    text-indent: 10px;
+}
+
+.regist_body .gender{
+    text-align: center;
+}
+
+.regist_body .gender input{
+    width: 15px;
+    height: 15px;
+    margin-left: 30px;
+}
+.regist_body .sub input{
+    width: 80px;
+    height: 35px;
+    background-color: deepskyblue;
+    color: white;
+    font-size: 16px;
+    margin: 0 20px;
+}
+.cancel{
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    color: red;
+    font-family: "STXingkai", sans-serif;
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+.tip{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: lightgrey;
+    border: 1px solid gray;
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+
+.support{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: lightgrey;
+    border: 1px solid gray;
+    display: none;
+    position: absolute;
+    z-index: 100000;
+}

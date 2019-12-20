@@ -9,7 +9,7 @@
     from logistic_info, admin
     where logistic_info.admin_id = admin.id
     <if test="id != 0">
-        and id=#{id}
+        and logistic_info.id=#{id}
     </if>
     <if test="title != null and title != ''">
         and title=#{title}
@@ -20,7 +20,7 @@
     <if test="issueDate != null and issueDate != ''">
         and issueDate=#{issueDate}
     </if>
-    <if test="admin.name != null">
+    <if test="admin.name != null and admin.name != ''">
         and admin.name=#{admin.name}
     </if>
 </select>

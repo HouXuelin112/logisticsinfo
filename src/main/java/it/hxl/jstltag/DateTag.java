@@ -11,7 +11,7 @@ public class DateTag extends TagSupport {
     private Date date;
     @Override
     public int doEndTag() throws JspException {
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         String targetTime = format.format(date);
         try {
             super.pageContext.getOut().write(targetTime);
